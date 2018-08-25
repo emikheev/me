@@ -1,3 +1,6 @@
+def test():
+    print('yay meee333333')
+    
 def subplot(n,m):
     import matplotlib.pyplot as plt
     import matplotlib.gridspec as gridspec
@@ -19,10 +22,10 @@ def fig2mon2():
     #geom = mngr.window.geometry()
     
     
-def plot(y):
+def plot(x,y):
     import matplotlib.pyplot as plt
     plt.figure(figsize=(12,10))
-    plt.plot(y)
+    plt.plot(x,y)
 
 #close all figures
 def cf():

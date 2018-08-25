@@ -4,7 +4,8 @@ def test():
 def subplot(n,m):
     import matplotlib.pyplot as plt
     import matplotlib.gridspec as gridspec
-    fig = plt.figure(figsize=(12,10))
+#    fig = plt.figure(figsize=(7.2,5))
+    fig = plt.figure
     gs = gridspec.GridSpec(n, m)
     mngr = plt.get_current_fig_manager()
   
@@ -20,6 +21,14 @@ def fig2mon2():
     mngr.window.showMaximized()
     #for setting up a different monitor configuraiton
     #geom = mngr.window.geometry()
+
+def f2m2():
+    import matplotlib.pyplot as plt
+    fig = plt.figure
+    mngr = plt.get_current_fig_manager()
+    mngr = plt.get_current_fig_manager()
+    mngr.window.setGeometry(1920, 34, 1709, 1046)
+    mngr.window.showMaximized()
     
     
 def plot(x,y):
